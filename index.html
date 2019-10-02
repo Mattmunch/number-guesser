@@ -10,19 +10,24 @@
 </head>
 
 <body>
+    <section class="content">
     <h1>Guess A Number!</h1>
     <h3> What To Do</h3>
-    <p> You need to guess a number between 1 and 20, <i>including</i> 1 and 20. You will have four guesses and be prompted whether your guess was too high or too low.</p>
-<section>
-    Pick a number: <input id="guess-entry" type='number' max='20' min='1'> 
-    <button id="submit-answer">Submit</button>
-    <br> Number of guesses remaining:<span id="guesses-remaining"></span>
-    <br> Guess result:
-</section>
+    <p> You need to guess a number between 1 and 20, <i>including</i> 1 and 20. You will have four guesses and be
+        prompted whether your guess was too high or too low.</p>
+    </section>
+    <section class='content'>
+        Pick a number: <input id="guess-entry" type='number' max='20' min='1'>
+        <button id="submit-answer">Submit</button>
+        <button id="retry-button" class="hidden">Try Again?</button>
+        <br> Number of guesses remaining:<span id="guesses-remaining"></span>
+        <br> Guess result:<span id="guess-result"></span>
+        <br><img id='losing-image' class="hidden" src="assets/Gameover.jpg" alt="game over illustration">
+    </section>
 
 
 
-    <script src="app.js"> </script>
+    <script type="module" src="app.js"> </script>
 
 </body>
 

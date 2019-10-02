@@ -1,10 +1,11 @@
 function guessChecker(userGuess, selectedNumber) {
     if (userGuess === selectedNumber){
-        return 'Winner';
+        return 0;
     } else if (userGuess > selectedNumber) {
-        return 'Lower';
+        return -1;
     } else {
-        return 'Higher';
+        return 1;
     }
+    
 }
 export default guessChecker;
